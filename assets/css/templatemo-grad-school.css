@@ -165,7 +165,7 @@ a.menu-link { display: none; }
 }
 
 .main-header {
-    background-color: rgba(22,34,57,0.95);
+    background:transparent;
     height: 80px;
     position: fixed;
     z-index: 12;
@@ -885,7 +885,7 @@ section.courses .owl-carousel button.active {
 /* Video */
 
 section.video {
-    background-image: url(../images/video-bg.jpg);
+ 
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;

@@ -26,3 +26,7 @@
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
+.images{
+    height:460px;
+    box-shadow: 0 0 50px  #FC3 ;
+}
