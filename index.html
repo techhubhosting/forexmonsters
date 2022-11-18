@@ -60,7 +60,7 @@ https://templatemo.com/tm-557-grad-school
               <h6>Sign up and get a <em>huge discount</em> once the Monsters Course 4.0 is released. It's
               a one-time offer</h6>
             </div>
-            <form id="contact">
+            <form id="contact" action="https://script.google.com/macros/s/AKfycbwHgckGWmw_06ANqxhGQIqaVIt8HeOENQOG7gfRCzO35K1xsqAAm8TWKXBbUb9D-grUzg/exec" method="POST">
               <div class="row">
                 <div class="col-md-12">
                   <fieldset>
@@ -101,23 +101,7 @@ https://templatemo.com/tm-557-grad-school
   </footer>
 
   <!-- Scripts -->
-   <script>
-        let form = document.querySelector("form");
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            document.querySelector("#sub").value = "Submiting..";
-            let data = new FormData(form);
-            fetch('https://script.google.com/macros/s/AKfycbwHgckGWmw_06ANqxhGQIqaVIt8HeOENQOG7gfRCzO35K1xsqAAm8TWKXBbUb9D-grUzg/exec', {
-                    method: "POST",
-                    body: data
-                })
-                .then(res => res.text())
-                .then(data => {
-                    document.querySelector("#msg").innerHTML = data;
-                    document.querySelector("#sub").value = "Submit"
-                });
-        })
-    </script>
+   
   <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
